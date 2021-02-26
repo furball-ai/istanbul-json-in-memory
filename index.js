@@ -10,6 +10,7 @@ class JsonInMemoryReport extends ReportBase {
     if (!JsonInMemoryReport.instance) {
       super();
       this.reportJSON = {};
+      JsonInMemoryReport.instance = this
     }
     return JsonInMemoryReport.instance;
   }
@@ -27,6 +28,7 @@ class JsonInMemoryReport extends ReportBase {
       return;
     }
     this.writeSummary("total", node.getCoverageSummary());
+    console.log(this.reportJSON)
   }
 
   onDetail(node) {
@@ -40,6 +42,5 @@ class JsonInMemoryReport extends ReportBase {
 
 // Make use of singleton pattern
 const instance = new JsonInMemoryReport();
-Object.freeze(instance)
 
 module.exports = JsonInMemoryReport

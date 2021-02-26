@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "peerDependencies": {
-    "instanbul-lib-report": "^3.0.0"
+  "dependencies": {
+    "istanbul-lib-report": "^3.0.0"
   }
 }
