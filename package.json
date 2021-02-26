@@ -1,0 +1,9 @@
+{
+  "name": "@furball/istanbul-json-in-memory",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "peerDependencies": {
+    "instanbul-lib-report": "^3.0.0"
+  }
+}
