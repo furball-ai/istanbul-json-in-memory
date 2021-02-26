@@ -20,7 +20,7 @@ class JsonInMemoryReport extends ReportBase {
   }
 
   writeSummary(filePath, sc) {
-    this.reportJSON[JSON.stringify(filePath)] = JSON.stringify(sc);
+    this.reportJSON[filePath] = sc;
   }
 
   onSummary(node) {
