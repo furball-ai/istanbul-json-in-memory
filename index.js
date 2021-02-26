@@ -28,7 +28,6 @@ class JsonInMemoryReport extends ReportBase {
       return;
     }
     this.writeSummary("total", node.getCoverageSummary());
-    console.log(this.reportJSON)
   }
 
   onDetail(node) {
